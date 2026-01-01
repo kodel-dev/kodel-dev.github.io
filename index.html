@@ -3,82 +3,145 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Kodel's GitHub Profile</title>
+  <title>Kodel's Profile</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.css"/>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
+    :root {
+      --neon-cyan: #00ffc3;
+      --neon-blue: #1e90ff;
+    }
+    
     html[data-theme='dark'] {
-      background-color: #0d0d0d;
-      color: #00ffc3;
+      background-color: #0d1117;
+      color: #e6edf3;
     }
     html[data-theme='light'] {
-      background-color: #f0f0f0;
+      background-color: #ffffff;
       color: #1e1e1e;
     }
-    .glow:hover {
-      filter: drop-shadow(0 0 10px #00ffc3);
-      transform: scale(1.05);
+    
+
+    .text-neon { color: var(--neon-cyan); }
+    .border-neon { border-color: var(--neon-cyan); }
+    
+    .glow-img:hover {
+      filter: drop-shadow(0 0 15px var(--neon-cyan));
+      transform: scale(1.02);
       transition: all 0.3s ease-in-out;
+    }
+    
+    .glass-box {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      padding: 1rem;
     }
   </style>
 </head>
-<body class="p-8 max-w-4xl mx-auto font-mono">
-  <h1 class="text-4xl font-bold text-center mb-4">Hi there, I'm <span class="text-cyan-400">Kodel</span> 👋</h1>
+<body class="p-4 md:p-8 max-w-5xl mx-auto font-mono flex flex-col items-center gap-8">
 
-  <p class="text-center mb-6">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&pause=1000&center=true&vCenter=true&width=435&lines=Creative+Developer+%7C+Game+Enthusiast+%7C+POS+Builder" alt="Typing SVG" class="mx-auto" />
-  </p>
-
-  <div class="text-center mb-6">
-    <button onclick="toggleTheme()" class="btn btn-outline glow">🌓 Toggle Mode</button>
+  <div class="w-full">
+    <img src="https://capsule-render.vercel.app/api?type=waving&color=0:00ffc3,100:1e90ff&height=220&section=header&text=Kodel%20Dev&fontSize=60&fontAlign=50&fontColor=ffffff&animation=fadeIn&fontAlignY=35" alt="Banner" class="w-full rounded-b-2xl shadow-lg"/>
   </div>
 
-  <hr class="my-6 border-cyan-400"/>
+  <div class="text-center space-y-4">
+    <h1 class="text-4xl md:text-5xl font-bold flex items-center justify-center gap-2">
+      Hi there, I'm <span class="text-neon">Kodel</span> 
+      <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="35px" alt="wave"/>
+    </h1>
+    
+    <div class="flex justify-center">
+      <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=1E90FF&center=true&vCenter=true&width=500&lines=Creative+Developer+%F0%9F%92%BB;Game+Enthusiast+%F0%9F%8E%AE;3D+Modeler+%26+Designer+%F0%9F%8E%A8;Night+Owl+Coder+%F0%9F%8C%99" alt="Typing SVG" />
+    </div>
 
-  <h2 class="text-2xl font-semibold mb-2">🎯 About Me</h2>
-  <ul class="list-disc list-inside mb-4">
-    <li>🔭 Currently working on: <strong>POS App, ZEPETO World Studio map</strong></li>
-    <li>🧠 Learning: <strong>C++, PHP, Unity, React</strong></li>
-    <li>✍️ I love building apps and games at night 🌙</li>
-    <li>📫 Reach me at: <i>coming soon</i></li>
-  </ul>
-
-  <h2 class="text-2xl font-semibold mb-2">💻 Tech Stack</h2>
-  <div class="flex flex-wrap gap-4 items-center mb-6">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" width="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" width="40" />
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" width="40" />
+    <button onclick="toggleTheme()" class="btn btn-sm btn-outline border-neon text-neon hover:bg-[#00ffc3] hover:text-black mt-2">
+      🌓 Toggle Mode
+    </button>
   </div>
 
-<h3 align="center">📊 GitHub Stats</h3>
-<div align="center">
-  <table border="0">
-    <tr>
-      <td>
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=kodel-dev&theme=tokyonight&hide_border=true&bg_color=0d1117&ring=00ffc3&currStreakLabel=00ffc3" width="420px"/>
-      </td>
-    </tr>
-  </table>
-  <br/>
-</div>
+  <div class="flex flex-wrap justify-center gap-2">
+    <a href="https://kodel-dev.github.io" target="_blank" class="hover:opacity-80 transition">
+      <img src="https://img.shields.io/badge/Portfolio-00ffc3?style=for-the-badge&logo=google-chrome&logoColor=black&labelColor=101010" alt="Portfolio"/>
+    </a>
+    <a href="mailto:kodelz651@gmail.com" class="hover:opacity-80 transition">
+      <img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=101010" alt="Email"/>
+    </a>
+    <a href="https://instagram.com/notyur_devboy" target="_blank" class="hover:opacity-80 transition">
+      <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white&labelColor=101010" alt="Instagram"/>
+    </a>
+  </div>
 
-  <h2 class="text-2xl font-semibold mb-2">🌟 Fun Zone</h2>
-  <blockquote class="border-l-4 border-cyan-400 pl-4 italic mb-4">
-    "Creativity is intelligence having fun." — Albert Einstein<br/>
-    "Code is like humor. If you have to explain it, it's bad."
-  </blockquote>
+  <div class="flex flex-wrap justify-center gap-2">
+    <img src="https://komarev.com/ghpvc/?username=kodel-dev&style=flat-square&color=00ffc3&label=PROFILE+VIEWS" alt="views"/>
+    <img src="https://img.shields.io/github/followers/kodel-dev?label=FOLLOWERS&style=flat-square&color=1e90ff" alt="followers"/>
+  </div>
 
-  <p class="text-center text-sm">
-    <img src="https://komarev.com/ghpvc/?username=kodel-dev&color=brightgreen&style=flat-square" alt="visitors" />
-  </p>
+  <hr class="w-full border-neon opacity-50"/>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8 w-full items-center">
+    <div class="glass-box">
+      <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">⚡ About Me</h3>
+      <ul class="space-y-3 list-none">
+        <li>🎮 Passionate about: <b>Interactive Games & Simulation</b></li>
+        <li>🧠 Currently Learning: <code class="text-neon">C++</code>, <code class="text-neon">Unity</code>, <code class="text-neon">React</code></li>
+        <li>🎨 Hobbies: <b>3D Modeling & Level Design</b></li>
+        <li>🌙 Fun fact: <i>"I commit my best code while the world sleeps."</i></li>
+        <li>🚀 Goal: Building immersive digital experiences.</li>
+      </ul>
+    </div>
+    
+    <div class="flex justify-center">
+      <img src="https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif" class="w-full max-w-sm rounded-xl shadow-[0_0_20px_rgba(0,255,195,0.2)] border border-white/10" alt="coding gif"/>
+    </div>
+  </div>
+
+  <div class="text-center w-full">
+    <h3 class="text-2xl font-bold mb-6">💻 Tech Stack & Tools</h3>
+    <div class="flex justify-center">
+      <img src="https://skillicons.dev/icons?i=c,cpp,cs,php,html,js,react,python,unity,blender,vscode,git&perline=6&theme=dark" class="max-w-full" alt="skills"/>
+    </div>
+  </div>
+
+  <div class="text-center w-full">
+    <h3 class="text-2xl font-bold mb-6">🖼️ 3D Showcase (Sketchfab)</h3>
+    <div class="flex flex-col items-center">
+      <a href="https://sketchfab.com/3d-models/high-quality-maid-model-for-games-4b46ace4d9c748cda18a6c2f751850b1" target="_blank" class="glow-img block">
+        <img src="thumbnail/image.png" alt="High-Quality Maid Model" class="w-[300px] rounded-xl border-2 border-neon shadow-lg"/>
+      </a>
+      <p class="mt-4 text-sm text-gray-400">
+        ✨ <a href="#" class="text-neon hover:underline">High-Quality Maid Model</a> by <span class="font-bold">dev-kodel</span> ✨
+      </p>
+    </div>
+  </div>
+
+  <div class="text-center w-full">
+    <h3 class="text-2xl font-bold mb-6">📊 GitHub Stats</h3>
+    <div class="flex justify-center">
+      <img src="https://github-readme-streak-stats.herokuapp.com/?user=kodel-dev&theme=tokyonight&hide_border=true&bg_color=0d1117&ring=00ffc3&currStreakLabel=00ffc3" class="max-w-full md:w-[420px]" alt="streak"/>
+    </div>
+  </div>
+
+  <div class="text-center w-full">
+    <h3 class="text-2xl font-bold mb-6">🐍 Contribution Activity</h3>
+    <div class="flex justify-center w-full">
+      <img src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" class="w-full max-w-3xl" alt="snake"/>
+    </div>
+  </div>
+
+  <div class="w-full text-center mt-8">
+    <img src="https://capsule-render.vercel.app/api?type=rect&color=0:1e90ff,100:00ffc3&height=10&width=100%" class="w-full rounded mb-6"/>
+    <blockquote class="italic text-gray-500">
+      "Code is like humor. If you have to explain it, it's bad."
+    </blockquote>
+  </div>
 
   <script>
     const theme = localStorage.getItem('theme') || 'dark';
     document.documentElement.setAttribute('data-theme', theme);
     function toggleTheme() {
-      const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+      const current = document.documentElement.getAttribute('data-theme');
+      const newTheme = current === 'dark' ? 'light' : 'dark';
       document.documentElement.setAttribute('data-theme', newTheme);
       localStorage.setItem('theme', newTheme);
     }
