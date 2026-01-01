@@ -29,9 +29,11 @@
 
     .font-mono { font-family: 'Fira Code', monospace; }
     
+    /* Neon Utilities */
     .text-neon { color: var(--neon-cyan); text-shadow: 0 0 10px rgba(0, 255, 195, 0.5); }
     .border-neon { border-color: var(--neon-cyan); }
     
+    /* Glass Effect */
     .glass-card {
       background: rgba(20, 20, 25, 0.6);
       backdrop-filter: blur(12px);
@@ -48,6 +50,7 @@
       box-shadow: 0 10px 40px -10px rgba(0, 255, 195, 0.2);
     }
 
+    /* Animations */
     @keyframes float {
       0% { transform: translateY(0px); }
       50% { transform: translateY(-15px); }
@@ -162,9 +165,17 @@
           </div>
 
           <div class="md:w-1/2 flex justify-center z-10">
-            <div class="relative floating w-full max-w-sm">
+            <div class="relative floating">
               <div class="absolute inset-0 bg-cyan-500 blur-[60px] opacity-20 rounded-full"></div>
-              <img src="thumbnail/image.png" alt="3D Model Preview" class="relative rounded-2xl border-2 border-white/10 shadow-2xl w-full object-cover aspect-[4/3] bg-black/50 transform rotate-2 hover:rotate-0 transition duration-500"/>
+              
+              <img 
+                src="thumbnail/image.png" 
+                alt="High-Quality Maid Model" 
+                width="300" 
+                style="border-radius: 12px; border: 2px solid #00ffc3; box-shadow: 0 0 30px rgba(30, 144, 255, 0.3);"
+                class="relative bg-black/50 transform rotate-2 hover:rotate-0 transition duration-500"
+              />
+              
             </div>
           </div>
         </div>
